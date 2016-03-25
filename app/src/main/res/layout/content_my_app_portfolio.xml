@@ -15,11 +15,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+
         android:text="My Nanodegree Apps!"
         android:id="@+id/textView"
-        android:layout_margin="25dp"
-        android:textSize="30sp"/>
+        android:layout_margin="45dp"
+        android:textSize="26sp"/>
     <Button
         android:id="@+id/next_button"
         android:layout_width="250dp"
@@ -31,7 +31,7 @@
         android:paddingTop="15dp"
         android:layout_margin="5dp"
         android:layout_marginTop="30dp"
-        android:onClick="toastOne"
+        android:onClick="buttonClicked"
         android:background="#F08C35"
         android:textSize="18sp"
         />
@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="15dp"
         android:layout_margin="5dp"
-        android:onClick="toastSec"
+        android:onClick="buttonClicked"
         android:textSize="18sp"/>
 
     <Button
@@ -57,7 +57,7 @@
         android:background="#F08C35"
         android:gravity="center_horizontal"
         android:text="LIBRARY APP"
-        android:onClick="toastThird"
+        android:onClick="buttonClicked"
         android:layout_below="@+id/second_button"
         android:layout_centerHorizontal="true"
         android:paddingTop="15dp"
@@ -69,7 +69,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="#F08C35"
-        android:onClick="toastFourth"
+        android:onClick="buttonClicked"
         android:gravity="center_horizontal"
         android:text="BUILD IT BIGGER"
         android:layout_below="@+id/third_button"
@@ -82,7 +82,7 @@
         android:id="@+id/fifth_button"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:onClick="toastFifth"
+        android:onClick="buttonClicked"
         android:background="#F08C35"
         android:gravity="center_horizontal"
         android:text="XYZ READER"
@@ -99,7 +99,7 @@
         android:layout_height="50dp"
         android:gravity="center_horizontal"
         android:text="CAPSTONE:MY OWN APP"
-        android:onClick="toastSixth"
+        android:onClick="buttonClicked"
         android:layout_below="@+id/fifth_button"
         android:layout_centerHorizontal="true"
         android:paddingTop="15dp"

@@ -9,62 +9,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MyAppPortfolio extends AppCompatActivity {
 
-    public void toastOne(View v)
-    {
-        Context context = getApplicationContext();
-        CharSequence text = "THIS BUTTON WILL LAUNCH SPOTIFY STREAMER!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-
-    public void toastSec(View v)
-    {
-        Context context = getApplicationContext();
-        CharSequence text = "THIS BUTTON WILL LAUNCH SCORES APP!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-    public void toastThird(View v)
-    {
-        Context context = getApplicationContext();
-        CharSequence text = "THIS BUTTON WILL LAUNCH LIBRARY APP!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }   public void toastFourth(View v)
-    {
-        Context context = getApplicationContext();
-        CharSequence text = "THIS BUTTON WILL LAUNCH BUILD IT BIGGER!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }   public void toastFifth(View v)
-    {
-        Context context = getApplicationContext();
-        CharSequence text = "THIS BUTTON WILL LAUNCH XYZ READER";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }   public void toastSixth(View v)
-    {
-        Context context = getApplicationContext();
-        CharSequence text = "THIS BUTTON WILL LAUNCH CAPSTONE:MY OWN APP ^_^ ";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+    public void buttonClicked(View v) {
+        String buttonText = ((Button) v).getText().toString();
+     /* Since we know that buttonClicked is assigned to Buttons, we first cast it to a Button `((Button) v)` then we retrieving the text on the button by calling `getText()` and then finally converting into a String by calling `toString()` */
+        Toast.makeText(this, "This button launches the " + buttonText, Toast.LENGTH_LONG).show();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +44,7 @@ public class MyAppPortfolio extends AppCompatActivity {
         return true;
     }
 
-    @Override
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -104,5 +57,5 @@ public class MyAppPortfolio extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
